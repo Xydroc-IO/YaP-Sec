@@ -15,6 +15,13 @@ class YaPsecLauncher(tk.Tk):
         self.geometry("800x600")
         self.configure(bg="#1e1e2e")
         
+        try:
+            icon_path = os.path.join(ROOT_DIR, "..", "Icon.png")
+            icon_img = tk.PhotoImage(file=icon_path)
+            self.iconphoto(True, icon_img)
+        except Exception as e:
+            print(f"Could not load icon: {e}")
+        
         self.process = None
         
         # Header

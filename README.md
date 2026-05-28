@@ -1,5 +1,7 @@
 <h1 align="center">
   <br>
+  <img src="Icon.png" alt="YaP-Sec" width="200">
+  <br>
   YaP-Sec
   <br>
 </h1>
