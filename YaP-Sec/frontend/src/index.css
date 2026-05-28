@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-yap-bg: #0a0a0a;
+  --color-yap-surface: #0f0f0f;
+  --color-yap-border: #1f1f1f;
+  --color-network: #22d3ee;
+  --color-pentest: #fbbf24;
+  --color-critical: #f43f5e;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-mono);
+  background: var(--color-yap-bg);
+  color: #a1a1aa;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Terminal scrollbar */
+.terminal-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
